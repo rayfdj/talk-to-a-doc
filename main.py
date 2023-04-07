@@ -60,7 +60,7 @@ def create_chain(loader: UnstructuredFileLoader) -> RetrievalQA:
 
 
 def start_q_and_a(filename: str, chain: RetrievalQA):
-    print(f"You're asking questions about {os.path.split(filename)[1]}.")
+    print(f"You're asking questions about '{os.path.split(filename)[1]}'.")
     print("Type your questions and press Enter. Press Ctrl + C to exit.")
 
     while True:
